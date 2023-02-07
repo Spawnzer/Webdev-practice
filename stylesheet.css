@@ -7,7 +7,24 @@ header{
     height: 400px;
     padding: 20px;
     text-align: center;
+}
 
+@media screen and (max-width: 720px) {
+    header .mobile{
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    header .mobile{
+        display: none;
+    }
+    header .desktop{
+        display: inline-block;
+    }
 }
 
 body{
@@ -29,6 +46,12 @@ body{
     width: 200px;
     border-radius: 70px;
     box-shadow: rgb(31, 29, 29) 10px 10px 10px;
+}
+
+@media screen and (max-width: 720px){
+    .features{
+        display: block;
+    }
 }
 
 footer{
@@ -71,6 +94,7 @@ nav ul a:hover{
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 header .logo a{
@@ -90,3 +114,4 @@ figure figcaption{
     margin: 8px;
     color: rgb(36, 36, 31);
 }
+
